@@ -3,7 +3,7 @@ import Header from './components/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes , Route} from "react-router-dom" ;
 
-import Card from './components/Card';
+import Cards from './components/Cards';
 import CartDetail from './components/CartDetail';
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
 
      <Header/>
      <Routes>
-       <Route path="/" element={<Card/>} /> 
+       <Route path="/" element={<Cards/>} /> 
        <Route path="/cart" element={<CartDetail/>} /> 
 
 

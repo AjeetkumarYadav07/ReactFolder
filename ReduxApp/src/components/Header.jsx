@@ -49,7 +49,7 @@ const Header = () => {
   return (
     <>
      <Menu/>
-     <h1>helo </h1>
+     
 
      
     </>

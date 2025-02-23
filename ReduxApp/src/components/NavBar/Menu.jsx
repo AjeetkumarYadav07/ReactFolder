@@ -5,8 +5,8 @@ import ShoppingCart from './ShoppinCat';
 const Menu = () => {
   return (
     <>
-     <h1>helo im menu </h1>
-     <Navbar bg="dark" data-bs-theme="dark">
+     {/* <h1>helo im menu </h1> */}
+     <Navbar bg="dark" data-bs-theme="dark" style={{ height: "60px" }}>
         <Container>
           <NavLink to= "/"  className='text-light'> Add to Cart</NavLink>
           <Nav className="me-auto">
