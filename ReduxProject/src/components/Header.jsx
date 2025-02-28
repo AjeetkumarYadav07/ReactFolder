@@ -9,7 +9,7 @@ import { NavLink, useLocation } from "react-router-dom";
 const Header = () => {
 
   const {carts} = useSelector((state ,)=> state.allCart);
-    console.log(carts);
+    // console.log(carts);
     const location = useLocation();
 
   

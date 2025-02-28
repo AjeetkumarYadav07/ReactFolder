@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./cartstyle.css" ;
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart  , removeToCart , removeSingleItem , emptyCart } from '../redux/features/cartSlice';
+import toast from 'react-hot-toast';
 const CardDetails = () => {
 
   const {carts} = useSelector((state) =>state.allCart);
@@ -19,6 +20,7 @@ const CardDetails = () => {
   //for remove 
   const remoVeData = (e)=>{
     dispatch(removeToCart(e))
+    toast.success("Item removed from your cart")
   }
  
   //Single remove 
@@ -29,6 +31,7 @@ const CardDetails = () => {
   // Empty the cart
   const cartEmpty = () =>{
      dispatch(emptyCart() )
+     toast.success("Your cart is empty")
   }
 
 

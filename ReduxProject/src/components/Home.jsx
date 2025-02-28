@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card";
 import CardData from "./CardData";
 import {useDispatch} from 'react-redux';
 import { addToCart } from "../redux/features/cartSlice";
+import toast  from 'react-hot-toast';
 const Home = () => {
   const [data, setData] = useState(CardData); // ✅ Corrected useState usage
 
@@ -15,7 +16,8 @@ const dispatch = useDispatch();
 //addTocart 
 
  const send = (e) =>{
-    dispatch(addToCart (e))
+    dispatch(addToCart (e));
+    toast.success("Item added sucessfully ")
    
  }
  
